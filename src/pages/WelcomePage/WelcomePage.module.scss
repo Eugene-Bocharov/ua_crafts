@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.pageBox{
+    height: 100vh;
+    width: 100%;
+    background-color: #d88080;
+}
+
+.WelcomeBriefBoxContainer{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.briefP{
+    font-family: $raleway;
+
+}
+
+.BriefButton{
+background-color: #655757;
+}
