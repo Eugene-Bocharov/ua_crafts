@@ -13,14 +13,7 @@ const App: React.FC = () => {
     <React.Fragment>
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <ContainerBox>
-                <MainPage />
-              </ContainerBox>
-            }
-          />
+          <Route path="/" element={<MainPage />} />
           <Route path="/welcome" element={<WelcomePage />} />
           <Route
             path="/not-found"
