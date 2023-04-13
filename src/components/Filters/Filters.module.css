@@ -1,3 +1,86 @@
 .main{
-    width: 30%;
+    width: 35%;
+}
+
+.filter-li {
+    list-style: none;
+
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: black;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.heading{
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: black;
+    margin-right: 22px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.section{
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.invise{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.more{
+    margin: auto;
+
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.arrow{
+    margin-left: 8px;
+}
+
+.on{
+    transform: rotate(180deg);
+}
+
+.ul{
+    padding: 0px;
 }
