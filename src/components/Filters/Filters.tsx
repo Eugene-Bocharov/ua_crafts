@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './Filters.module.css';
-import checkboxStyle from './Checkbox.module.css';
 
 import filter from './Filter.svg';
 import arrow from './Arrow.svg';
+import { common } from '@mui/material/colors';
+import Checkbox from '@mui/material/Checkbox';
 
 interface filterProps {
   children: string;
@@ -14,9 +15,11 @@ const FilterItem: React.FC<filterProps> = ({ children }) => {
     <React.Fragment>
       <li className={styles['filter-li']}>
         {children}
-        <input
-          className={checkboxStyle['control-indicator']}
-          type={'checkbox'}
+        <Checkbox
+          sx={{
+            color: common['black'],
+            '& .MuiSvgIcon-root': { fontSize: 23, color: common['black'] },
+          }}
         />
       </li>
     </React.Fragment>

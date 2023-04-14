@@ -12,6 +12,7 @@
 }
 
 .flex-div {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,5 +26,9 @@
     letter-spacing: 0em;
     text-align: left;
     color: white;
+    margin: 0;
+}
 
+.right-space{
+    margin-right: 10px;
 }

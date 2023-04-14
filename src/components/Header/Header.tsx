@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
             <div style={{ width: '30%' }} className={styles['flex-div']}>
               <img src={logo} alt="logo" />
               <button className={styles['invisible-btn']}>
-                <p style={{ marginRight: '10px' }} className={styles.text}>
+                <p className={styles.text + ' ' + styles['right-space']}>
                   Catalog
                 </p>
                 <img src={shopPack} alt="shopPack" />
@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
             <div style={{ width: '10%' }} className={styles['flex-div']}>
               <img src={basket} alt="basket" />
               <button className={styles['invisible-btn']}>
-                <img style={{ marginRight: '10px' }} src={user} alt="user" />
+                <img className={styles['right-space']} src={user} alt="user" />
                 <img src={triangle} alt="triangle" />
               </button>
             </div>

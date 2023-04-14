@@ -43,11 +43,27 @@
     letter-spacing: 0em;
     text-align: left;
     color: white;
-
+    align-self: left;
 }
 
 .arrow{
     height: 97px;
     width: 48px;
     margin: 42px;
+}
+
+.ads-div{
+    position: absolute;
+    top: -400px;
+    align-items: left;
+}
+
+.left{
+    position: absolute;
+    left: 20px;
+}
+
+.right{
+    position: absolute;
+    left: -20px;
 }

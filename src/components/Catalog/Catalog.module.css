@@ -1,3 +1,11 @@
 .main{
-    width: 65%;
+    width: 75%;
+}
+
+.card-box{
+    width: 300px;
+}
+
+.card-img{
+    width: 100%;
 }
