@@ -10,6 +10,7 @@ import { LogIn } from './pages/LogIn/LogIn';
 
 import { ContainerBox } from './components/ContainerBox/ContainerBox';
 import { Orders } from './pages/Orders/Orders';
+import { OrderPage } from './pages/OrderPage/OrderPage';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
           <Route path="/start" element={<StartPage />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/order" element={<OrderPage />} />
           <Route
             path="/not-found"
             element={

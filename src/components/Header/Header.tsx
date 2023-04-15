@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 import { ContainerBox } from '../ContainerBox/ContainerBox';
@@ -9,6 +10,7 @@ import triangle from './Triangle.svg';
 import shopPack from './ShopPack.svg';
 import { HeaderProps } from '../../declarations/Interfaces/ComponentProps';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import { IconButton } from '@mui/material';
 
 export const Header: React.FC<HeaderProps> = ({ loggedIn }) => {
   return (
@@ -28,7 +30,11 @@ export const Header: React.FC<HeaderProps> = ({ loggedIn }) => {
             <div style={{ width: '10%' }} className={styles['flex-div']}>
               {loggedIn ? (
                 <React.Fragment>
-                  <img src={basket} alt="basket" />
+                  <Link to="/orders">
+                    <IconButton>
+                      <img src={basket} alt="basket" />
+                    </IconButton>
+                  </Link>
                   <button className={styles['invisible-btn']}>
                     <img
                       className={styles['right-space']}

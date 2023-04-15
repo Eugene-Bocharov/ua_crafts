@@ -1,22 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Orders.module.css';
+import styles from './OrderPage.module.css';
 
 import { Header } from '../../components/Header/Header';
 import { ContainerBox } from '../../components/ContainerBox/ContainerBox';
-import { OrdersTable } from '../../components/OrdersTable/OrdersTable';
+import { OrderTable } from '../../components/OrderTable/OrderTable';
 
 import WestIcon from '@mui/icons-material/West';
 import IconButton from '@mui/material/IconButton';
 
-export const Orders: React.FC = () => {
+export const OrderPage: React.FC = () => {
   return (
     <React.Fragment>
       <Header loggedIn />
       <ContainerBox>
         <div className={styles.main}>
           <div className={styles['back-div']}>
-            <Link to="/">
+            <Link to="/orders">
               <IconButton className={styles.back} aria-label="back">
                 <WestIcon />
               </IconButton>
@@ -24,7 +24,7 @@ export const Orders: React.FC = () => {
           </div>
           <h1 className={styles.heading}>Your orders</h1>
           <div className={styles['grid-container']}>
-            <OrdersTable />
+            <OrderTable />
           </div>
         </div>
       </ContainerBox>
