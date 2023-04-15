@@ -32,3 +32,19 @@
 .right-space{
     margin-right: 10px;
 }
+
+.login{
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.icon{
+    color: white;
+    width: 18px;
+    height: 18px;
+}

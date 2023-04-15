@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { MainPage } from './pages/MainPage/MainPage';
 import { WelcomePage } from './pages/WelcomePage/WelcomePage';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
+import { StartPage } from './pages/StartPage/StartPage';
 
 import { ContainerBox } from './components/ContainerBox/ContainerBox';
 
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/welcome" element={<WelcomePage />} />
+          <Route path="/start" element={<StartPage />} />
           <Route
             path="/not-found"
             element={

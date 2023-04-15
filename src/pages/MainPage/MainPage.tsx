@@ -8,7 +8,7 @@ import { Footer } from '../../components/Footer/Footer';
 export const MainPage: React.FC = () => {
   return (
     <React.Fragment>
-      <Header />
+      <Header loggedIn />
       <PosterSlider />
       <Listing />
       <Footer />

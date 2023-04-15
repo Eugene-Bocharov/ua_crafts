@@ -9,3 +9,7 @@ export interface ContactProps {
   name: string;
   contact: string;
 }
+
+export interface HeaderProps {
+  loggedIn?: boolean;
+}

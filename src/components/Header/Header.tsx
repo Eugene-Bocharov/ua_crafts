@@ -7,8 +7,10 @@ import basket from './Basket.svg';
 import user from './User.svg';
 import triangle from './Triangle.svg';
 import shopPack from './ShopPack.svg';
+import { HeaderProps } from '../../declarations/Interfaces/ComponentProps';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
-export const Header: React.FC = () => {
+export const Header: React.FC<HeaderProps> = ({ loggedIn }) => {
   return (
     <React.Fragment>
       <div className={styles.header}>
@@ -24,11 +26,30 @@ export const Header: React.FC = () => {
               </button>
             </div>
             <div style={{ width: '10%' }} className={styles['flex-div']}>
-              <img src={basket} alt="basket" />
-              <button className={styles['invisible-btn']}>
-                <img className={styles['right-space']} src={user} alt="user" />
-                <img src={triangle} alt="triangle" />
-              </button>
+              {loggedIn ? (
+                <React.Fragment>
+                  <img src={basket} alt="basket" />
+                  <button className={styles['invisible-btn']}>
+                    <img
+                      className={styles['right-space']}
+                      src={user}
+                      alt="user"
+                    />
+                    <img src={triangle} alt="triangle" />
+                  </button>
+                </React.Fragment>
+              ) : (
+                <React.Fragment>
+                  <button className={styles['invisible-btn']}>
+                    <span
+                      className={`${styles.login} ${styles['right-space']}`}
+                    >
+                      Log In
+                    </span>
+                  </button>
+                  <ExitToAppIcon className={styles.icon} />
+                </React.Fragment>
+              )}
             </div>
           </div>
         </ContainerBox>
