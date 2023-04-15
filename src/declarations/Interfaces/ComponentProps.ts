@@ -4,3 +4,8 @@ export interface productCardProps {
   price: string;
   discount?: string;
 }
+
+export interface ContactProps {
+  name: string;
+  contact: string;
+}

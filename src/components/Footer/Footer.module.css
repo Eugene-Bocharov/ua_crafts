@@ -1,0 +1,83 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+.gray{
+    background: #343A40;
+    height: 202px;
+}
+
+.icon{
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 16px;
+}
+
+.lefty{
+    text-align: center;
+}
+
+.contacts{
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.contact-name{
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+
+.contact-link{
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+
+    margin-left: 5px;
+}
+
+.copyright{
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.policy{
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}   
