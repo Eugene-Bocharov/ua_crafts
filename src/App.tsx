@@ -9,6 +9,7 @@ import { StartPage } from './pages/StartPage/StartPage';
 import { LogIn } from './pages/LogIn/LogIn';
 
 import { ContainerBox } from './components/ContainerBox/ContainerBox';
+import { Orders } from './pages/Orders/Orders';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
           <Route path="/welcome" element={<WelcomePage />} />
           <Route path="/start" element={<StartPage />} />
           <Route path="/login" element={<LogIn />} />
+          <Route path="/orders" element={<Orders />} />
           <Route
             path="/not-found"
             element={

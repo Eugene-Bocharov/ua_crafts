@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './LogIn.module.css';
-import './body.css';
 
 import WestIcon from '@mui/icons-material/West';
 import IconButton from '@mui/material/IconButton';
@@ -10,6 +9,12 @@ import google from './google.svg';
 import facebook from './facebook.svg';
 
 export const LogIn: React.FC = () => {
+  useEffect(() => {
+    document.body.style.background = '#F5F5F5';
+    return () => {
+      document.body.style.background = '#FFFFFF';
+    };
+  });
   return (
     <React.Fragment>
       <div className={styles.container}>
