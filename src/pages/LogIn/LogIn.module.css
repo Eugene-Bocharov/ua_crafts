@@ -6,8 +6,120 @@
     height: 100vh;
 }
 
+
 .main {
+    width: 510px;
     border-radius: 12px;
     box-shadow: 0px 0px 40px 2px #00000040;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
 
+.heading{
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.text{
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.input{
+    outline: none;
+    background: #EDEDED;
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: auto;
+
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: black;
+    border: none;
+
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.imput::placeholder{
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #AAAAAA;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 12px 40px 12px 40px;
+    background-color: black;
+    border: none;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+
+.line{
+    border-top: 2px solid black;
+    opacity: 100;
+}
+
+.icon{
+    margin: 30px 18px;
+}
+
+.link{
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+.pt{
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+}
+
+.back-div{
+    height: 7px;
+    width: 100%;
+    display: flex;
+}
+
+.back {
+    align-self: flex-start;
 }

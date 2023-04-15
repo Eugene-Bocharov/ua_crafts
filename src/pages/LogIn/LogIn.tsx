@@ -2,11 +2,23 @@ import React from 'react';
 import styles from './LogIn.module.css';
 import './body.css';
 
+import WestIcon from '@mui/icons-material/West';
+import IconButton from '@mui/material/IconButton';
+
+import github from './github.svg';
+import google from './google.svg';
+import facebook from './facebook.svg';
+
 export const LogIn: React.FC = () => {
   return (
     <React.Fragment>
       <div className={styles.container}>
         <div className={styles.main}>
+          <div className={styles['back-div']}>
+            <IconButton className={styles.back} aria-label="back">
+              <WestIcon />
+            </IconButton>
+          </div>
           <h1 className={styles.heading}>Log In</h1>
           <form action="">
             <p className={styles.text}>Username</p>
@@ -18,17 +30,24 @@ export const LogIn: React.FC = () => {
             <p className={styles.text}>Password</p>
             <input
               className={styles.input}
-              type="text"
+              type="password"
               placeholder="Password"
             />
-            <button type="submit">Log in</button>
+
+            <br />
+            <button className={styles.btn} type="submit">
+              Log in
+            </button>
           </form>
-          <hr />
-          <div></div>
-          <a>Forgot your password?</a>
-          <p>
-            Not a member?
-            <a>Create an account</a>
+          <hr className={styles.line} />
+          <div>
+            <img className={styles.icon} src={google} alt="" />
+            <img className={styles.icon} src={github} alt="" />
+            <img className={styles.icon} src={facebook} alt="" />
+          </div>
+          <a className={styles.link}>Forgot your password?</a>
+          <p className={styles.pt}>
+            Not a member? <a className={styles.link}>Create an account</a>
           </p>
         </div>
       </div>
