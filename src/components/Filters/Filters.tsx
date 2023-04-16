@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Filters.module.css';
 
 import filter from './Filter.svg';
-import arrow from './Arrow.svg';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { common } from '@mui/material/colors';
 import Checkbox from '@mui/material/Checkbox';
 
@@ -43,8 +43,8 @@ export const Filters: React.FC = () => {
           <FilterItem>Necklaces</FilterItem>
         </ul>
         <button className={`${styles.flex} ${styles.invise} ${styles.more}`}>
-          <p>View more filters</p>
-          <img className={styles.arrow} src={arrow} alt="" />
+          <p className={styles.more}>View more filters</p>
+          <KeyboardArrowDownIcon className={styles.arrow} />
         </button>
       </div>
     </React.Fragment>

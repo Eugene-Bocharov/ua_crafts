@@ -1,4 +1,3 @@
-import { To } from 'react-router';
 import { onAmount, onDelete } from '../types/ComponentsProps';
 
 export interface productCardProps {
@@ -52,4 +51,8 @@ export interface SmallBasketListItemProps {
   name: string;
   amount: number;
   price: number;
+}
+
+export interface SyntheticEvent<T> {
+  currentTarget: EventTarget & T;
 }

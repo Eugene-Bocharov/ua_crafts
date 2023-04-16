@@ -13,6 +13,7 @@ import { Orders } from './pages/Orders/Orders';
 import { OrderPage } from './pages/OrderPage/OrderPage';
 import { ProfilePage } from './pages/ProfilePage/ProfilePage';
 import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
+import './App.css';
 
 const App: React.FC = () => {
   return (
