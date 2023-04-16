@@ -5,3 +5,5 @@ export type ContainerBoxProps = {
 };
 
 export type onDelete = (id: number) => void;
+
+export type onAmount = (id: number, val: number) => void;

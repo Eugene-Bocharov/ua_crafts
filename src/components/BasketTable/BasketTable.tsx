@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './BasketTable.module.css';
 
 import { BasketTableItem } from '../BasketTableItem/BasketTableItem';
-import { onDelete } from '../../declarations/types/ComponentsProps';
+import { onAmount, onDelete } from '../../declarations/types/ComponentsProps';
 import { basketState } from '../../declarations/Interfaces/ComponentProps';
 
 const createData = (name: string, amount: number, price: number) => {
@@ -20,19 +20,29 @@ export const BasketTable: React.FC = () => {
     createData('Flag-shaped keychain3', 2, 60),
     createData('Flag-shaped keychain4', 2, 60),
   ]);
+
   const ondelete: onDelete = (id) => {
-    console.log(id);
     const newState: Array<basketState> = [
       ...state.slice(0, id),
       ...state.slice(id + 1, state.length),
     ];
-    console.log(newState);
+    setState(newState);
+  };
+
+  const onamount: onAmount = (id, val) => {
+    const changed = state[id];
+    changed.amount = val;
+    const newState: Array<basketState> = [
+      ...state.slice(0, id),
+      changed,
+      ...state.slice(id + 1, state.length),
+    ];
     setState(newState);
   };
   return (
     <React.Fragment>
       <div>
-        <h1></h1>
+        <h1 className={styles.heading}>Basket</h1>
         <ul>
           <li className={styles['table-head']}>
             <span className={`${styles['table-heading']} ${styles.name}`}>
@@ -61,10 +71,24 @@ export const BasketTable: React.FC = () => {
                 deleteStyle={styles.delete}
                 id={i}
                 onDelete={ondelete}
+                onAmount={onamount}
               />
             );
           })}
         </ul>
+        <hr className={styles.line} />
+        <div className={styles.flex}>
+          <span className={styles.front}></span>
+          <span className={styles.total}>
+            Total{' '}
+            {state.reduce((partSumm, a) => partSumm + a.price * a.amount, 0)}{' '}
+            UAN
+          </span>
+          <span className={styles.back}></span>
+        </div>
+        <div className={styles.centered}>
+          <button className={styles.btn}>Checkout</button>
+        </div>
       </div>
     </React.Fragment>
   );

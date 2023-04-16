@@ -15,13 +15,19 @@ export const BasketTableItem: React.FC<BasketItemProps> = ({
   deleteStyle,
   id,
   onDelete,
+  onAmount,
 }) => {
   return (
     <React.Fragment>
       <li className={styles.container}>
         <span className={`${styles.item} ${nameStyle}`}>{name}</span>
         <span className={`${styles.item} ${amountStyle}`}>
-          <input className={styles.input} defaultValue={amount} type="text" />
+          <input
+            onChange={({ target: { value } }) => onAmount(id, Number(value))}
+            className={styles.input}
+            defaultValue={amount}
+            type="text"
+          />
         </span>
         <span className={`${styles.item} ${sumStyle}`}>
           {amount * price} UAN
