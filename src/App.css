@@ -46,3 +46,7 @@ img, button{
     -ms-user-select: none;
 }
 
+a{
+  text-decoration: none;
+}
+

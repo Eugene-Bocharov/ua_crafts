@@ -11,6 +11,7 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { IconButton } from '@mui/material';
 import shopper from './ShopPack.svg';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Button from '@mui/material/Button';
 
 export const Header: React.FC<HeaderProps> = ({ loggedIn }) => {
   return (
@@ -24,16 +25,16 @@ export const Header: React.FC<HeaderProps> = ({ loggedIn }) => {
                   <img src={logo} alt="logo" />
                 </IconButton>
               </Link>
-              <button className={styles['invisible-btn']}>
-                <p className={styles.text + ' ' + styles['right-space']}>
-                  Catalog
-                </p>
-                <Link to="/#catalog">
-                  <IconButton>
+              <Link to="/#catalog">
+                <IconButton>
+                  <button className={styles['invisible-btn']}>
+                    <p className={styles.text + ' ' + styles['right-space']}>
+                      Catalog
+                    </p>
                     <img src={shopper} />
-                  </IconButton>
-                </Link>
-              </button>
+                  </button>
+                </IconButton>
+              </Link>
             </div>
             <div style={{ width: '10%' }} className={styles['flex-div']}>
               {loggedIn ? (
@@ -55,14 +56,16 @@ export const Header: React.FC<HeaderProps> = ({ loggedIn }) => {
                 </React.Fragment>
               ) : (
                 <React.Fragment>
-                  <button className={styles['invisible-btn']}>
-                    <span
-                      className={`${styles.login} ${styles['right-space']}`}
-                    >
-                      Log In
-                    </span>
-                  </button>
-                  <ExitToAppIcon className={styles.icon} />
+                  <Link to="/login">
+                    <Button variant="text">
+                      <span
+                        className={`${styles.login} ${styles['right-space']}`}
+                      >
+                        Log In
+                      </span>
+                      <ExitToAppIcon className={styles.icon} />
+                    </Button>
+                  </Link>
                 </React.Fragment>
               )}
             </div>

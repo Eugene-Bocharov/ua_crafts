@@ -5,6 +5,7 @@
 
 .card-box{
     width: 330px;
+    cursor: pointer;
 }
 
 .card-img{

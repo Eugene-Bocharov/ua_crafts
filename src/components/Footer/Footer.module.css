@@ -62,6 +62,10 @@
     margin-left: 5px;
 }
 
+.contact-link:hover{
+    color: white;
+}
+
 .copyright{
     font-family: Raleway;
     font-size: 14px;
@@ -81,3 +85,7 @@
     text-align: left;
     color: white;
 }   
+
+.policy:hover{
+    color: white;
+}

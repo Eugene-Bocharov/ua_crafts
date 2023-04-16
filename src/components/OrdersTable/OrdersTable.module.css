@@ -16,7 +16,10 @@
     color: black;
 }
 
-.underscored {
+.underscore {
     text-decoration: underline;
+    color: black;
+}
+.underscore:hover {
     color: black;
 }
