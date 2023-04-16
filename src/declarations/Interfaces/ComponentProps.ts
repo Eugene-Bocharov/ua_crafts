@@ -1,3 +1,5 @@
+import { onDelete } from '../types/ComponentsProps';
+
 export interface productCardProps {
   img: string;
   label: string;
@@ -12,4 +14,29 @@ export interface ContactProps {
 
 export interface HeaderProps {
   loggedIn?: boolean;
+}
+
+export interface InputProps {
+  name: string;
+  value?: string;
+  type?: string;
+  small?: boolean;
+}
+
+export interface BasketItemProps {
+  name: string;
+  amount: number;
+  price: number;
+  nameStyle: string;
+  amountStyle: string;
+  sumStyle: string;
+  deleteStyle: string;
+  id: number;
+  onDelete: onDelete;
+}
+
+export interface basketState {
+  name: string;
+  amount: number;
+  price: number;
 }

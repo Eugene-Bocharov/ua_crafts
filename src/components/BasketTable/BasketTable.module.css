@@ -1,0 +1,28 @@
+.table-heading{
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+}
+
+.table-head{
+    display: flex;
+}
+
+.name{
+    width: 50%;
+}
+
+.amount{
+    width: 20%;
+}
+
+.sum{
+    width: 20%;
+}
+.delete{
+    width: 10%;
+}
