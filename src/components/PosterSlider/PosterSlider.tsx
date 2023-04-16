@@ -23,17 +23,22 @@ export const PosterSlider: React.FC = () => {
             <img className={styles.arrow + ' ' + styles.left} src={ArrowLeft} />
           }
           variant={'dark'}
-          controls={true}
+          controls
+          indicators={false}
         >
           <Carousel.Item>
             <img className={styles.img} src={poster} alt={poster} />
             <Carousel.Caption>
               <div className={styles['ads-div']}>
-                <h1 className={styles['head']}>From March 27 to April 10. </h1>
-                <h2 className={styles['under-head']}>
-                  Discounts on all keychains up to -70%.
-                </h2>
-                <button className={styles['learn-btn']}>Learn more</button>
+                <div className={styles.left}>
+                  <h1 className={styles['head']}>
+                    From March 27 to April 10.{' '}
+                  </h1>
+                  <h2 className={styles['under-head']}>
+                    Discounts on all keychains up to -70%.
+                  </h2>
+                  <button className={styles['learn-btn']}>Learn more</button>
+                </div>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
@@ -41,11 +46,15 @@ export const PosterSlider: React.FC = () => {
             <img className={styles.img} src={poster} alt={poster} />
             <Carousel.Caption>
               <div className={styles['ads-div']}>
-                <h1 className={styles['head']}>From March 27 to April 10. </h1>
-                <h2 className={styles['under-head']}>
-                  Discounts on all keychains up to -70%.
-                </h2>
-                <button className={styles['learn-btn']}>Learn more</button>
+                <div className={styles.left}>
+                  <h1 className={styles['head']}>
+                    From March 27 to April 10.{' '}
+                  </h1>
+                  <h2 className={styles['under-head']}>
+                    Discounts on all keychains up to -70%.
+                  </h2>
+                  <button className={styles['learn-btn']}>Learn more</button>
+                </div>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
@@ -53,11 +62,15 @@ export const PosterSlider: React.FC = () => {
             <img className={styles.img} src={poster} alt={poster} />
             <Carousel.Caption>
               <div className={styles['ads-div']}>
-                <h1 className={styles['head']}>From March 27 to April 10. </h1>
-                <h2 className={styles['under-head']}>
-                  Discounts on all keychains up to -70%.
-                </h2>
-                <button className={styles['learn-btn']}>Learn more</button>
+                <div className={styles.left}>
+                  <h1 className={styles['head']}>
+                    From March 27 to April 10.{' '}
+                  </h1>
+                  <h2 className={styles['under-head']}>
+                    Discounts on all keychains up to -70%.
+                  </h2>
+                  <button className={styles['learn-btn']}>Learn more</button>
+                </div>
               </div>
             </Carousel.Caption>
           </Carousel.Item>

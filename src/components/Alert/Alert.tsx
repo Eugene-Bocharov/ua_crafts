@@ -52,7 +52,6 @@ export const Alert: React.FC = () => {
     <div>
       <Snackbar
         open={open}
-        autoHideDuration={6000}
         onClose={handleClose}
         message="Not linked pages"
         action={action}

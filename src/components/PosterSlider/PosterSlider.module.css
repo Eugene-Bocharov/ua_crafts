@@ -58,17 +58,12 @@
     align-items: left;
 }
 
-.left{
-    position: absolute;
-    left: 20px;
-}
-
-.right{
-    position: absolute;
-    left: -20px;
+.left   {
+    align-items: left;
+    text-align: left;
 }
 
 .img  {
     width: 100%;
-    
+
 }
