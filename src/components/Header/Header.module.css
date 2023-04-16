@@ -42,6 +42,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: white;
+    text-transform: none;
 }
 
 .icon{

@@ -31,9 +31,10 @@ export const OrdersTable: React.FC = () => {
           <TableCell>
             <h1 className={styles.headings}>№</h1>
           </TableCell>
-          <TableCell align="left">
+          <TableCell align="center">
             <h1 className={styles.headings}>Status</h1>
           </TableCell>
+          <TableCell></TableCell>
           <TableCell align="center">
             <h1 className={styles.headings}>Created</h1>
           </TableCell>
@@ -59,9 +60,10 @@ export const OrdersTable: React.FC = () => {
             <TableCell component="th" scope="row">
               <p className={styles.data}>{row.number}</p>
             </TableCell>
-            <TableCell align="left">
+            <TableCell align="center">
               <p className={styles.data}>{row.status}</p>
             </TableCell>
+            <TableCell></TableCell>
             <TableCell align="center">
               <p className={styles.data}>{row.created}</p>
             </TableCell>

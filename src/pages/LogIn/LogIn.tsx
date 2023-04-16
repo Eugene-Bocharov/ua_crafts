@@ -5,6 +5,7 @@ import github from './github.svg';
 import google from './google.svg';
 import facebook from './facebook.svg';
 import { BackLink } from '../../components/BackLink/BackLink';
+import { InputLabel } from '../../components/Inputlabel/Inputlabel';
 
 export const LogIn: React.FC = () => {
   useEffect(() => {
@@ -20,19 +21,8 @@ export const LogIn: React.FC = () => {
           <BackLink />
           <h1 className={styles.heading}>Log In</h1>
           <form action="">
-            <p className={styles.text}>Username</p>
-            <input
-              className={styles.input}
-              type="text"
-              placeholder="Username"
-            />
-            <p className={styles.text}>Password</p>
-            <input
-              className={styles.input}
-              type="password"
-              placeholder="Password"
-            />
-
+            <InputLabel name="Username" />
+            <InputLabel name="Password" type="password" />
             <br />
             <button className={styles.btn} type="submit">
               Log in
