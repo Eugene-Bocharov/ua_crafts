@@ -19,6 +19,11 @@ export const ProfilePage: React.FC = () => {
             <div>
               <ProfileForm />
               <BasketTable />
+              <div className={styles.centered}>
+                <Link to="/checkout">
+                  <button className={styles.btn}>Checkout</button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

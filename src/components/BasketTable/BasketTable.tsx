@@ -86,9 +86,6 @@ export const BasketTable: React.FC = () => {
           </span>
           <span className={styles.back}></span>
         </div>
-        <div className={styles.centered}>
-          <button className={styles.btn}>Checkout</button>
-        </div>
       </div>
     </React.Fragment>
   );

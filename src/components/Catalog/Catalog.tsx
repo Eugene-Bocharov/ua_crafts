@@ -49,7 +49,7 @@ const theme = createTheme({
 export const Catalog: React.FC = () => {
   return (
     <React.Fragment>
-      <div className={styles.main}>
+      <div id="catalog" className={styles.main}>
         <ThemeProvider theme={theme}>
           <Grid2
             display="flex"

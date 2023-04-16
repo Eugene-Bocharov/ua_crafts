@@ -19,6 +19,9 @@ export const CheckoutPage: React.FC = () => {
               <DeliveryAdress />
               <SmallBasketList />
             </div>
+            <div className={styles['center-container']}>
+              <button className={styles.btn}>Continue</button>
+            </div>
           </div>
         </div>
       </ContainerBox>
