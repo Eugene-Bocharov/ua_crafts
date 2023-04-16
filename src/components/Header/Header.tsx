@@ -9,7 +9,7 @@ import triangle from './Triangle.svg';
 import { HeaderProps } from '../../declarations/Interfaces/ComponentProps';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { IconButton } from '@mui/material';
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import shopper from './ShopPack.svg';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 export const Header: React.FC<HeaderProps> = ({ loggedIn }) => {
@@ -30,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ loggedIn }) => {
                 </p>
                 <Link to="/#catalog">
                   <IconButton>
-                    <ShoppingBasketIcon className={styles.icon} />
+                    <img src={shopper} />
                   </IconButton>
                 </Link>
               </button>
