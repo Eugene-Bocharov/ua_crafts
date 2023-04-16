@@ -14,6 +14,7 @@ import { OrderPage } from './pages/OrderPage/OrderPage';
 import { ProfilePage } from './pages/ProfilePage/ProfilePage';
 import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
 import './App.css';
+import { Thanks } from './components/Thanks/Thanks';
 
 const App: React.FC = () => {
   return (

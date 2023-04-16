@@ -5,8 +5,19 @@ import { ContainerBox } from '../../components/ContainerBox/ContainerBox';
 import { BackLink } from '../../components/BackLink/BackLink';
 import { DeliveryAdress } from '../../components/DeliveryAdress/DeliveryAdress';
 import { SmallBasketList } from '../../components/SmallBasketList/SmallBasketList';
+import { Thanks } from '../../components/Thanks/Thanks';
 
 export const CheckoutPage: React.FC = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const [selectedValue, setSelectedValue] = React.useState('sss');
+
+  const handleClose = (value: string) => {
+    setOpen(false);
+    setSelectedValue(value);
+  };
   return (
     <React.Fragment>
       <Header loggedIn />
@@ -20,8 +31,15 @@ export const CheckoutPage: React.FC = () => {
               <SmallBasketList />
             </div>
             <div className={styles['center-container']}>
-              <button className={styles.btn}>Continue</button>
+              <button onClick={handleClickOpen} className={styles.btn}>
+                Continue
+              </button>
             </div>
+            <Thanks
+              selectedValue={selectedValue}
+              open={open}
+              onClose={handleClose}
+            />
           </div>
         </div>
       </ContainerBox>
