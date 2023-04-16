@@ -19,48 +19,7 @@
     color: black;
 }
 
-.input-label{
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: black;
-}
 
-.input{
-    height: 58px;
-    width: 450px;
-    border-radius: 10px;
-    background: #EDEDED;
-    border: none;
-    outline: none;
-
-    margin-bottom: 30px;
-    padding-left: 25px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-right: auto;
-
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: black;
-}
-
-.input::placeholder{
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #AAAAAA;
-}
 
 .space-between{
     justify-content: space-between;
@@ -71,8 +30,4 @@
     align-items: center;
     justify-content: end;
     width: 350px;
-}
-
-.small-input{
-    width: 386px;
 }

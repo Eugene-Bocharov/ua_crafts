@@ -1,0 +1,9 @@
+.back-div{
+    height: 7px;
+    width: 100%;
+    display: flex;
+}
+
+.back {
+    align-self: flex-start;
+}

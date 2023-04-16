@@ -1,0 +1,26 @@
+.main{
+    margin-top: 80px;
+}
+
+.main-container{
+    margin: auto;
+}
+
+.heading{
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+}
+
+.flex  {
+    display: flex;
+    justify-content: center;
+}
+
+.center{
+    margin: auto;
+}

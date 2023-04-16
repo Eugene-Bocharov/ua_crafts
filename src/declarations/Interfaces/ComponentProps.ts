@@ -1,3 +1,4 @@
+import { To } from 'react-router';
 import { onAmount, onDelete } from '../types/ComponentsProps';
 
 export interface productCardProps {
@@ -21,6 +22,7 @@ export interface InputProps {
   value?: string;
   type?: string;
   small?: boolean;
+  big?: boolean;
 }
 
 export interface BasketItemProps {
@@ -37,6 +39,16 @@ export interface BasketItemProps {
 }
 
 export interface basketState {
+  name: string;
+  amount: number;
+  price: number;
+}
+
+export interface backLinkProps {
+  to?: string;
+}
+
+export interface SmallBasketListItemProps {
   name: string;
   amount: number;
   price: number;

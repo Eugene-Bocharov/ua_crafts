@@ -4,10 +4,9 @@ import styles from './ProfilePage.module.css';
 import { Link } from 'react-router-dom';
 import { Header } from '../../components/Header/Header';
 import { ContainerBox } from '../../components/ContainerBox/ContainerBox';
-import { IconButton } from '@mui/material';
-import WestIcon from '@mui/icons-material/West';
 import { ProfileForm } from '../../components/ProfileForm/ProfileForm';
 import { BasketTable } from '../../components/BasketTable/BasketTable';
+import { BackLink } from '../../components/BackLink/BackLink';
 
 export const ProfilePage: React.FC = () => {
   return (
@@ -15,11 +14,7 @@ export const ProfilePage: React.FC = () => {
       <Header loggedIn />
       <ContainerBox>
         <div className={styles.main}>
-          <Link to="/">
-            <IconButton className={styles.back} aria-label="back">
-              <WestIcon />
-            </IconButton>
-          </Link>
+          <BackLink />
           <div className={styles['center-container']}>
             <div>
               <ProfileForm />

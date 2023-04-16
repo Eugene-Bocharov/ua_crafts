@@ -1,0 +1,37 @@
+.li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 5px 0px;
+}
+
+.li-container{
+    list-style: none;
+    border-bottom: rgba(0, 0, 0, 0.4) solid 2px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ul{
+    padding: 0px;
+}
+
+.item{
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.item-name{
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #AAAAAA;
+}

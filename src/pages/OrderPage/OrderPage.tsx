@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './OrderPage.module.css';
 
 import { Header } from '../../components/Header/Header';
 import { ContainerBox } from '../../components/ContainerBox/ContainerBox';
 import { OrderTable } from '../../components/OrderTable/OrderTable';
 
-import WestIcon from '@mui/icons-material/West';
-import IconButton from '@mui/material/IconButton';
+import { BackLink } from '../../components/BackLink/BackLink';
 
 export const OrderPage: React.FC = () => {
   return (
@@ -15,13 +13,7 @@ export const OrderPage: React.FC = () => {
       <Header loggedIn />
       <ContainerBox>
         <div className={styles.main}>
-          <div className={styles['back-div']}>
-            <Link to="/orders">
-              <IconButton className={styles.back} aria-label="back">
-                <WestIcon />
-              </IconButton>
-            </Link>
-          </div>
+          <BackLink to="/orders" />
           <h1 className={styles.heading}>Your orders</h1>
           <div className={styles['grid-container']}>
             <OrderTable />

@@ -1,24 +1,8 @@
 import React from 'react';
 import styles from './ProfileForm.module.css';
 
-import { InputProps } from '../../declarations/Interfaces/ComponentProps';
+import { InputLabel } from '../Inputlabel/Inputlabel';
 import profile from './profileLogo.png';
-
-const InputLabel: React.FC<InputProps> = ({ name, value, type, small }) => {
-  return (
-    <React.Fragment>
-      <div>
-        <p className={styles['input-label']}>{name}</p>
-        <input
-          className={`${styles.input} ${small ? styles['small-input'] : ''}`}
-          placeholder={name}
-          defaultValue={value}
-          type={type || 'text'}
-        />
-      </div>
-    </React.Fragment>
-  );
-};
 
 export const ProfileForm: React.FC = () => {
   return (

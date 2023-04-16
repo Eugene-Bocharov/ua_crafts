@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
 import styles from './LogIn.module.css';
 
-import WestIcon from '@mui/icons-material/West';
-import IconButton from '@mui/material/IconButton';
-
 import github from './github.svg';
 import google from './google.svg';
 import facebook from './facebook.svg';
+import { BackLink } from '../../components/BackLink/BackLink';
 
 export const LogIn: React.FC = () => {
   useEffect(() => {
@@ -19,11 +17,7 @@ export const LogIn: React.FC = () => {
     <React.Fragment>
       <div className={styles.container}>
         <div className={styles.main}>
-          <div className={styles['back-div']}>
-            <IconButton className={styles.back} aria-label="back">
-              <WestIcon />
-            </IconButton>
-          </div>
+          <BackLink />
           <h1 className={styles.heading}>Log In</h1>
           <form action="">
             <p className={styles.text}>Username</p>
